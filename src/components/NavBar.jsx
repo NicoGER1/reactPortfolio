@@ -1,5 +1,4 @@
-import React from "react";
-import icon from "../assets/logo1.png";
+import icon from "../assets/logo3.png";
 
 const NavBar = () => {
   return (

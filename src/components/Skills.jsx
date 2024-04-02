@@ -1,17 +1,25 @@
-import React from "react";
+
+import html from "../assets/html.png"
+import css from "../assets/css.png"
+import js from "../assets/js.png"
+import react from "../assets/react.png"
+import node from "../assets/node.png"
+import sql from "../assets/sql.png"
+import vscode from "../assets/vscode.webp"
+import git from "../assets/git.webp"
+import apple from "../assets/apple.png"
 
 const Skills = () => {
   const SkillsList = [
-    { id: 1, name: "JavaScript", icon: "./assets/js.png" },
-    { id: 2, name: "html", icon: "./assets/html.png" },
-    { id: 3, name: "css", icon: "./assets/CSS3.png" },
-    { id: 4, name: "react", icon: "./assets/react.png" },
-    { id: 5, name: "node", icon: "./assets/node.png" },
-    { id: 6, name: "sql", icon: "./assets/sql.png" },
-    { id: 7, name: "vscode", icon: "./assets/vscode.webp" },
-    { id: 8, name: "git", icon: "./assets/git.webp" },
-    { id: 9, name: "apple", icon: "./assets/apple.png" },
-    { id: 10, name: "office", icon: "./assets/office.png" },
+    { id: 1, name: "html", icon: html },
+    { id: 2, name: "css", icon: css },
+    { id: 3, name: "JavaScript", icon: js },
+    { id: 4, name: "react", icon: react },
+    { id: 5, name: "node", icon: node },
+    { id: 6, name: "sql", icon: sql },
+    { id: 7, name: "vscode", icon: vscode },
+    { id: 8, name: "git", icon: git },
+    { id: 9, name: "apple", icon: apple },
   ];
 
   return (
