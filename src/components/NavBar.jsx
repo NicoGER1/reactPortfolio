@@ -1,9 +1,10 @@
 import icon from "../assets/logo3.png";
+import "../styles/NavBar.css";
 
 const NavBar = () => {
   return (
     <nav>
-      <img src={icon} alt="logo de NG" />
+      <img className="logo" src={icon} alt="logo de NG" />
       <ul>
         <li>Accueil</li>
         <li>A propos</li>

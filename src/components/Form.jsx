@@ -1,57 +1,44 @@
-import React from "react";
+import "../styles/Form.css";
 
-const Form = () => {
-  const [formData, setFormData] = React.useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
+function Form() {
   return (
-    <>
-      <h3>
-        N&apos;hesitez pas à prendre contact avec moi pour de nouveau projets
-        ambitieux
-      </h3>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Votre nom</label>
-        <input
-          type="text"
-          name="name"
-          onChange={handleInputChange}
-          value={formData.name}
-        />
-        <label htmlFor="email">Votre email</label>
-        <input
-          type="email"
-          name="email"
-          onChange={handleInputChange}
-          value={formData.email}
-        />
-        <label htmlFor="message">Votre message</label>
-        <textarea
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          onChange={handleInputChange}
-          value={formData.message}
-        ></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </>
+    <section className="contact-component">
+      <h2 id="Contact">
+        {" "}
+        N&apos;hesitez pas à prendre{" "}
+        <span className="contactcolor">contact</span> avec moi pour de nouveau
+        projets ambitieux
+      </h2>
+      <div className="contact-container">
+        <form className="form">
+          <input
+            name="name"
+            type="text"
+            className="feedback-input"
+            placeholder="Nom"
+            id="name"
+          />
+
+          <input
+            name="email"
+            type="text"
+            className="feedback-input"
+            id="email"
+            placeholder="Email"
+          />
+
+          <textarea
+            name="text"
+            className="feedback-input"
+            id="comment"
+            placeholder="Commentaire"
+          ></textarea>
+
+          <input type="submit" value="Envoyer" id="send-button" />
+        </form>
+      </div>
+    </section>
   );
-};
+}
 
 export default Form;

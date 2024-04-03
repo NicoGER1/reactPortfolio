@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#8121d0, #331c52);
+}
+
+nav > ul > li {
+  padding: 0rem 2rem 0rem 0rem;
+  display: inline-block;
+}
+
+a {
+  font-size: calc(1rem + 0.8vw);
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  width: 100px;
+}

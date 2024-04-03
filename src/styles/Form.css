@@ -1,0 +1,22 @@
+.contact-component {
+  background-color: #dccfed;
+  color: #331c52;
+  padding: 1rem 5rem 3rem 5rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+}
+.contactcolor {
+  color: #8121d0;
+}
+#Contact {
+  max-width: 30ch;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 500px;
+}
