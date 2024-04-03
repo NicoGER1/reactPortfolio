@@ -3,7 +3,7 @@ import "../styles/AboutMe.css";
 const AboutMe = () => {
   return (
     <div className="about">
-      <h2 className="title2">A propos de moi</h2>
+      <h2 className="title2" id = "AboutMe">A propos de moi</h2>
       <p className="para2">
         Je suis actuellement en formation pour devenir développeur web. Avant de
         me lancer dans cette aventure, j&apos;ai acquis de l&apos;expérience dans

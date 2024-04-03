@@ -8,7 +8,9 @@ const Header = () => {
       <NavBar />
       <header className="super-hero">
         <div className="hero-banner">
-          <h1 className="titleName">Nicolas Gerin</h1>
+          <h1 className="titleName" id="Home">
+            Nicolas Gerin
+          </h1>
           <p className="sstitle">Developpeur web</p>
         </div>
         <img className="avatar" src={avatar} alt="nicoAvatar" />
