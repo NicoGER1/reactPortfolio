@@ -1,10 +1,11 @@
 .contact-component {
   background-color: #dccfed;
   color: #331c52;
-  padding: 1rem 5rem 3rem 5rem;
+  padding: 2rem 5rem 3rem 5rem;
   margin-top: 0;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .contactcolor {
   color: #8121d0;
@@ -14,9 +15,27 @@
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 400px;
+}
+.form > input,
+.form > textarea {
+  height: 2rem;
+  background-color: #ffff;
+  color: #8121d0;
+  border: none;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+#comment {
+  height: 8rem;
+}
+
+#send-button {
+  background-color: #331c52;
+  color: #ffff;
 }

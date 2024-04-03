@@ -34,7 +34,7 @@ function Form() {
             placeholder="Commentaire"
           ></textarea>
 
-          <input type="submit" value="Envoyer" id="send-button" />
+          <input type="submit" value="✉️ Envoyer" id="send-button" />
         </form>
       </div>
     </section>

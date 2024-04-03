@@ -4,7 +4,6 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Form from "./components/Form";
-import icon from "./assets/logo3.png";
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 
@@ -18,15 +17,16 @@ const App = () => {
         <Projects />
         <Form />
       </div>
-      <footer>
-        <img src={icon} alt="logo de NG" />
+      <footer className="footer-container">
+        <div className="linkreseau">
+          <a href="https://github.com/NicoGER1" target="blank">
+            <img src={github} alt="logo Github" />
+          </a>
+          <a href="https://www.linkedin.com/in/nicolas-gerin/" target="blank">
+            <img src={linkedin} alt="logo linkedin" />
+          </a>
+        </div>
         <p>Designed by Nicolas Gerin</p>
-        <a href="https://github.com/NicoGER1" target="blank">
-          <img src={github} alt="logo Github" />
-        </a>
-        <a href="https://www.linkedin.com/in/nicolas-gerin/" target="blank">
-          <img src={linkedin} alt="logo linkedin" />
-        </a>
       </footer>
     </>
   );
