@@ -12,3 +12,17 @@
   padding-bottom: 3rem;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 570px) {
+  .about {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .title2 {
+    padding-top: 2rem;
+    margin-top: 0;
+  }
+  .para2 {
+    margin-right: 0;
+  }
+}

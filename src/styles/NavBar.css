@@ -31,3 +31,31 @@ a {
   z-index: 1000;
   transition: all 0.3s ease;
 }
+.burger {
+  width: 50px;
+  padding-right: 1rem;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.picNav {
+  width: 50px;
+}
+
+@media (max-width: 570px) {
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul.show {
+    display: block;
+  }
+  .picNav {
+    width: 30px;
+  }
+}

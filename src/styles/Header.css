@@ -74,9 +74,12 @@
   }
   .titleName {
     font-size: 2.4rem;
+    color: #8121d0;
+    margin-top: 3rem;
   }
   .sstitle {
     font-size: 1.8rem;
+    color: white;
   }
 }
 @media screen and (max-width: 570px) {
@@ -90,11 +93,10 @@
     width: 350px;
     align-self: flex-end;
   }
-  .titleName {
-    margin-top: 2rem;
-  }
+
   .titleName,
   .sstitle {
+    padding-left: 4rem;
     align-self: flex-start;
   }
 }

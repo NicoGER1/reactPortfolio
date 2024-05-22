@@ -43,3 +43,12 @@
   border-radius: 15px;
   padding: 0.5rem;
 }
+@media screen and (max-width: 570px) {
+  .project-component {
+    padding-left: 2rem;
+  }
+  .project-container > article > a > img {
+    width: 310px;
+    height: 250px;
+  }
+}
