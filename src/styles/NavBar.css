@@ -17,6 +17,7 @@ a {
   font-size: calc(0.5rem + 0.8vw);
   color: white;
   text-decoration: none;
+  padding-right: 2rem;
 }
 
 .logo {
@@ -42,6 +43,12 @@ a {
 
 .picNav {
   width: 50px;
+}
+
+@media (max-width: 900px) {
+  a {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 570px) {

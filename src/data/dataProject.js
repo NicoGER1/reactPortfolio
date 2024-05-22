@@ -24,21 +24,23 @@ const projects = [
     id: 3,
     image: project3,
     title: "Squizz Game",
-    description: "Quizz realisé en équipe au cours de ma formation",
+    description:
+      "Projet de quiz realisé en équipe au cours de ma formation a la WCS",
     link: "https://github.com/NicoGER1/Project-1-CodeSquad",
   },
   {
     id: 4,
     image: project4,
     title: "APARECIVM",
-    description: "Carte interactive sur le theme de Harry Potter",
+    description:
+      "Second projet de formation réaliser en équipe sur le thème de Harry Potter",
     link: "https://aparecivm.netlify.app/",
   },
   {
     id: 5,
     image: project5,
     title: "UFC Clone",
-    description: "Projet de reproduction du site UFC en version desktop",
+    description: "Projet personnel de réadapter le site UFC en version desktop",
     link: "https://ufc-fighting.netlify.app/",
   },
   {
