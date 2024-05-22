@@ -6,12 +6,10 @@ const Header = () => {
   return (
     <>
       <NavBar />
-      <header className="super-hero">
+      <header className="super-hero" id="AboutMe">
         <div className="hero-banner">
-          <h1 className="titleName" id="Home">
-            Nicolas Gerin
-          </h1>
-          <p className="sstitle">Developpeur web</p>
+          <h1 className="titleName">Nicolas Gerin</h1>
+          <p className="sstitle">Développeur web</p>
         </div>
         <img className="avatar" src={avatar} alt="nicoAvatar" />
       </header>

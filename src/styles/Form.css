@@ -39,3 +39,29 @@
   background-color: #331c52;
   color: #ffff;
 }
+
+@media screen and (max-width: 670px) {
+  .form {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .contact-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+  .form {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form {
+    width: 300px;
+  }
+  .contact-component {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
+}

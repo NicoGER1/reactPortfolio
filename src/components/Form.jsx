@@ -7,7 +7,7 @@ function Form() {
         {" "}
         N&apos;hesitez pas à prendre{" "}
         <span className="contactcolor">contact</span> avec moi pour plus
-        d'informations.
+        d&apos;informations.
       </h2>
       <div className="contact-container">
         <form className="form">
@@ -31,7 +31,7 @@ function Form() {
             name="text"
             className="feedback-input"
             id="comment"
-            placeholder="Commentaire"
+            placeholder="Message"
           ></textarea>
 
           <input type="submit" value="✉️ Envoyer" id="send-button" />

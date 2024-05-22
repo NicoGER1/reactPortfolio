@@ -8,16 +8,93 @@
   flex-direction: row;
 }
 .avatar {
-  width: 500px;
+  width: calc(400px + 0.8vw);
 }
+
 .titleName {
-  font-size: 80px;
+  font-size: 4rem;
   padding-left: 6rem;
   margin-top: 8rem;
-  color: #8121d0;
+  color: transparent;
+  background-image: linear-gradient(#8121d0, #b577e7);
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: -1400px, 0;
+  animation: backcolor 3s linear infinite alternate;
 }
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+
 .sstitle {
   font-size: 50px;
   padding-left: 6rem;
   margin-top: 0;
+  color: transparent;
+  background-image: linear-gradient(white, white);
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: -1400px, 0;
+  animation: backcolor 3s linear infinite alternate;
+}
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  .avatar {
+    width: 350px;
+  }
+  .titleName {
+    font-size: 3rem;
+  }
+  .sstitle {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .avatar {
+    width: 300px;
+  }
+  .titleName {
+    font-size: 2.8rem;
+  }
+  .sstitle {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .avatar {
+    width: 250px;
+  }
+  .titleName {
+    font-size: 2.4rem;
+  }
+  .sstitle {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .super-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .avatar {
+    width: 350px;
+    align-self: flex-end;
+  }
+  .titleName {
+    margin-top: 2rem;
+  }
+  .titleName,
+  .sstitle {
+    align-self: flex-start;
+  }
 }
