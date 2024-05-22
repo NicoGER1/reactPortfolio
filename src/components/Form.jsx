@@ -6,8 +6,8 @@ function Form() {
       <h2 id="Contact">
         {" "}
         N&apos;hesitez pas à prendre{" "}
-        <span className="contactcolor">contact</span> avec moi pour de nouveau
-        projets ambitieux
+        <span className="contactcolor">contact</span> avec moi pour plus
+        d'informations.
       </h2>
       <div className="contact-container">
         <form className="form">
