@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "../styles/Form.css";
 
 const Form = () => {
@@ -13,6 +15,28 @@ const Form = () => {
     const { name, value } = event.target;
     setContactForm({ ...contactForm, [name]: value });
   };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_APP_SERVICE_ID,
+        import.meta.env.VITE_APP_TEMPLATE_ID,
+        form.current,
+        { publicKey: import.meta.env.VITE_APP_PUBLIC_KEY }
+      )
+      .then(
+        (result) => {
+          alert("Message envoyé.");
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <section className="contact-component">
@@ -23,10 +47,7 @@ const Form = () => {
         d&apos;informations.
       </h2>
       <div className="contact-container">
-        <form
-          className="form-container"
-          onSubmit={(event) => event.preventDefault()}
-        >
+        <form className="form-container" ref={form} onSubmit={sendEmail}>
           <input
             className="feedback-input"
             required
@@ -40,7 +61,7 @@ const Form = () => {
             className="feedback-input"
             required
             placeholder="Firstname"
-            name="firstName"
+            name="firstname"
             value={contactForm.firstName}
             onChange={(e) => handleChangeForm(e)}
           />
