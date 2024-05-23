@@ -14,15 +14,15 @@
   max-width: 30ch;
 }
 
-.form {
+.form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
   width: 400px;
 }
-.form > input,
-.form > textarea {
+.form-container > input,
+.form-container > textarea {
   height: 2rem;
   background-color: #ffff;
   color: #8121d0;
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 670px) {
-  .form {
+  .form-container {
     width: 300px;
   }
 }
@@ -53,12 +53,12 @@
     align-items: center;
     padding: 1rem 3rem 1rem 3rem;
   }
-  .form {
+  .form-container {
     width: 400px;
   }
 }
 @media screen and (max-width: 450px) {
-  .form {
+  .form-container {
     width: 300px;
   }
   .contact-component {
