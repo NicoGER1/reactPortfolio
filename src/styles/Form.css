@@ -14,15 +14,15 @@
   max-width: 30ch;
 }
 
-.form {
+.form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
   width: 400px;
 }
-.form > input,
-.form > textarea {
+.form-container > input,
+.form-container > textarea {
   height: 2rem;
   background-color: #ffff;
   color: #8121d0;
@@ -38,4 +38,30 @@
 #send-button {
   background-color: #331c52;
   color: #ffff;
+}
+
+@media screen and (max-width: 670px) {
+  .form-container {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .contact-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+  .form-container {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form-container {
+    width: 300px;
+  }
+  .contact-component {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
 }

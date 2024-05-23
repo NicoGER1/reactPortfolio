@@ -2,6 +2,7 @@
   background-color: #e1ebed;
   padding-left: 5rem;
   color: #331c52;
+  padding-bottom: 2rem;
 }
 .title2 {
   padding-top: 3rem;
@@ -11,4 +12,41 @@
   margin-right: 50%;
   padding-bottom: 3rem;
   margin-bottom: 0;
+}
+.buttonDownload {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+}
+
+.buttonDownload:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.CvDownload {
+  color: #331c52;
+  padding: 0;
+}
+
+@media screen and (max-width: 570px) {
+  .about {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .title2 {
+    padding-top: 2rem;
+    margin-top: 0;
+  }
+  .para2 {
+    margin-right: 0;
+  }
 }

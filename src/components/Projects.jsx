@@ -13,7 +13,7 @@ const Projects = () => {
         </div>
         <div className="project-container">
           {projects.reverse().map((project) => (
-            <article key={project.id}>
+            <article key={project.id} className="project">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img src={project.image} alt={project.title} />
 

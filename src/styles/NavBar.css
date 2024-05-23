@@ -7,22 +7,10 @@ nav {
   background: linear-gradient(#8121d0, #331c52);
 }
 
-nav > ul > li {
-  padding: 0rem 2rem 0rem 0rem;
-  display: inline-block;
-  font-weight: bold;
-}
-
-a {
-  font-size: calc(0.5rem + 0.8vw);
-  color: white;
-  text-decoration: none;
-}
 
 .logo {
   width: 100px;
 }
-/* NavBar dynamic */
 .navbar-show {
   position: fixed;
   top: 0;

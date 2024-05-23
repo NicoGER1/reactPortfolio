@@ -1,6 +1,9 @@
-import React from 'react';
+import * as React from "react";
+
 import icon from "../assets/logo3.png";
 import "../styles/NavBar.css";
+import { StyledEngineProvider } from "@mui/material/styles";
+import Menu from "./Menu";
 
 const NavBar = () => {
   const [showNav, setShowNav] = React.useState(false);
@@ -20,24 +23,14 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <nav className={`navbar ${showNav ? "navbar-show" : ""}`}>
       <img className="logo" src={icon} alt="logo de NG" />
-      <ul>
-        <li>
-          <a href="#Home">Accueil</a>
-        </li>
-        <li>
-          <a href="#AboutMe">A propos</a>
-        </li>
-        <li>
-          <a href="#Project">Projets</a>
-        </li>
-        <li>
-          <a href="#Contact">Contact</a>
-        </li>
-      </ul>
+      <React.StrictMode>
+        <StyledEngineProvider injectFirst>
+          <Menu />
+        </StyledEngineProvider>
+      </React.StrictMode>
     </nav>
   );
 };

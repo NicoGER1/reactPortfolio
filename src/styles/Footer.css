@@ -1,0 +1,24 @@
+img {
+  width: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #8121d0;
+}
+
+.linkreseau {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.linkreseau > a > img {
+  width: 50px;
+}
+
+.footLink {
+  padding-right: 0;
+}

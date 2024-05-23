@@ -2,6 +2,7 @@
   background-color: #e1ebed;
   color: #331c52;
   padding-left: 5rem;
+  padding-right: 0.5rem;
 }
 
 .project-text {
@@ -12,8 +13,14 @@
 .project-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   padding-bottom: 6rem;
+}
+
+.project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 .project-container > article > a {
   font-size: 12px;
@@ -41,4 +48,13 @@
   height: 150px;
   border-radius: 15px;
   padding: 0.5rem;
+}
+@media screen and (max-width: 570px) {
+  .project-component {
+    padding-left: 2rem;
+  }
+  .project-container > article > a > img {
+    width: 310px;
+    height: 250px;
+  }
 }
