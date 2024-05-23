@@ -5,3 +5,10 @@
 .NavIcon {
   width: 30px;
 }
+
+a {
+  font-size: 1rem;
+  color: #331c52;
+  text-decoration: none;
+  padding-right: 2rem;
+}

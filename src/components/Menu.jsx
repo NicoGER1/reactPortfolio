@@ -38,6 +38,12 @@ export default function AnchorTemporaryDrawer() {
       sx={{
         height: "100vh",
         backgroundColor: "#e1ebed",
+        paddingTop: "2rem",
+        paddingLeft: "0.8rem",
+        display: "flex",
+        justifyContent: "start",
+        alignItems: "flex-start",
+        flexDirection: "column",
         width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
       }}
       role="presentation"
@@ -45,56 +51,64 @@ export default function AnchorTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Accueil"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <img src={home} alt="accueil icon" className="NavIcon" />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <a href="#Home" className="linkNav">
+          {["Accueil"].map((text) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <img src={home} alt="accueil icon" className="NavIcon" />
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </a>
       </List>
 
       <Divider />
       <List>
-        {["À propos"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <img src={about} alt="a propos icon" className="NavIcon" />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <a href="#AboutMe">
+          {["À propos"].map((text) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <img src={about} alt="a propos icon" className="NavIcon" />
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </a>
       </List>
       <Divider />
       <List>
-        {["Projets"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <img src={project} alt="projets icon" className="NavIcon" />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <a href="#Project">
+          {["Projets"].map((text) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <img src={project} alt="projets icon" className="NavIcon" />
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </a>
       </List>
       <Divider />
       <List>
-        {["Contact"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <img src={contact} alt="contact icon" className="NavIcon" />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <a href="#Contact">
+          {["Contact"].map((text) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <img src={contact} alt="contact icon" className="NavIcon" />
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </a>
       </List>
     </Box>
   );
