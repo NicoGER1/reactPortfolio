@@ -9,6 +9,7 @@
 }
 .avatar {
   width: calc(400px + 0.8vw);
+  filter: drop-shadow(10px 7px 10px #adb6c4);
 }
 
 .titleName {
