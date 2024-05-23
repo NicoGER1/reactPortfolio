@@ -7,7 +7,7 @@ const Skills = () => {
       <h2 className="title3">Mes compétences</h2>
       <div className="skill-container">
         {SkillsList.map((skill) => (
-          <article key={skill.id}>
+          <article key={skill.id} className="unicSkill">
             <img src={skill.icon} alt={skill.name} />
           </article>
         ))}

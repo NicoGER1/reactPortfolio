@@ -1,8 +1,9 @@
 import "../styles/AboutMe.css";
+import CvNicolasGerin from "../assets/CvNicolasGerin.pdf";
 
 const AboutMe = () => {
   return (
-    <div className="about" >
+    <div className="about">
       <h2 className="title2">A propos de moi</h2>
       <p className="para2">
         Je suis actuellement en formation pour devenir développeur web. Avant de
@@ -15,6 +16,15 @@ const AboutMe = () => {
         développeur web, je suis déterminé à créer des applications de qualité
         qui répondent aux besoins des utilisateurs
       </p>
+      <section className="buttonDownload">
+        <a
+          href={CvNicolasGerin}
+          className="CvDownload"
+          download="CvNicolasGerin.pdf"
+        >
+          Télécharger mon CV
+        </a>
+      </section>
     </div>
   );
 };

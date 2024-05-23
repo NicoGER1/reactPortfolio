@@ -13,6 +13,7 @@ const Form = () => {
     const { name, value } = event.target;
     setContactForm({ ...contactForm, [name]: value });
   };
+
   return (
     <section className="contact-component">
       <h2 id="Contact">
