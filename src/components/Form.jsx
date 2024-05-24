@@ -61,7 +61,7 @@ const Form = () => {
             className="feedback-input"
             required
             placeholder="Firstname"
-            name="firstname"
+            name="firstName"
             value={contactForm.firstName}
             onChange={(e) => handleChangeForm(e)}
           />
