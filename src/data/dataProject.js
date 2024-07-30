@@ -1,25 +1,11 @@
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.jpg";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
+import project7 from "../assets/project7.png";
+import project8 from "../assets/project8.png";
 import projectSoon from "../assets/projectSoon.png";
 
 const projects = [
-  {
-    id: 1,
-    image: project1,
-    title: "Welcome to colchis",
-    description: "Premier projet d'entré en formation",
-    link: "https://github.com/NicoGER1/colchis-project",
-  },
-  {
-    id: 2,
-    image: project2,
-    title: "Welcome on Board",
-    description: "Validation des bases CSS & HTML",
-    link: "https://github.com/NicoGER1/WelcomeOnBoard",
-  },
   {
     id: 3,
     image: project3,
@@ -42,6 +28,21 @@ const projects = [
     title: "UFC Clone",
     description: "Projet personnel de réadapter le site UFC en version desktop",
     link: "https://ufc-fighting.netlify.app/",
+  },
+  {
+    id: 7,
+    image: project7,
+    title: "Nanou",
+    description: "Projet personnel pour le suivi d'une assistante maternelle",
+    link: "https://github.com/NicoGER1/Nanou",
+  },
+  {
+    id: 8,
+    image: project8,
+    title: "Street Art Hunter",
+    description:
+      "Projet de groupe de chasse au street art dans l'esprit Pokemon Go",
+    link: "npm-code.remote-6.wilders.dev/",
   },
   {
     id: 6,

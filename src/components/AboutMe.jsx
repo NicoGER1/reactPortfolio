@@ -1,5 +1,5 @@
 import "../styles/AboutMe.css";
-import CvNicolasGerin from "../assets/CvNicolasGerin.pdf";
+import CvNicolasGerin from "../assets/CV_Nicolas_Gerin.pdf";
 
 const AboutMe = () => {
   return (
@@ -20,7 +20,7 @@ const AboutMe = () => {
         <a
           href={CvNicolasGerin}
           className="CvDownload"
-          download="CvNicolasGerin.pdf"
+          download="CV_Nicolas_Gerin.pdf"
         >
           Télécharger mon CV
         </a>
